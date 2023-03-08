@@ -38,3 +38,6 @@ CITED: The data is cited as it’s owned and collected by Divvy.
 
 ### ****STEP 3: PROCESS****
 
+#### ****Data Credibility****
+SQL is used data cleaning and transformation, and Tableau is used for data visualization.
+
