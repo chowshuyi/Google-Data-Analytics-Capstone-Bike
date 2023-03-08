@@ -22,14 +22,18 @@ Analyze the pattern and differences between casual riders and members, to provid
 ### ****STEP 2: PREPARE****
 
 #### ****Data Source and Specification****
-The latest 12 months of data (February 2022 to January 2023) is taken from [Divvy Bike website](https://divvy-tripdata.s3.amazonaws.com/index.html). They are stored in CSV files by month.
+The latest 12 months of data are taken from [Divvy Bike website](https://divvy-tripdata.s3.amazonaws.com/index.html). They are stored in CSV files by month.
 
 #### ****Data Credibility****
-**RELIABLE**: The reliability of data is uncertain because the information of riders is removed due to privacy reasons.
-**ORIGINAL**: The data is original as it's owned and collected by Divvy.
-**COMPREHENSIVE**: The data is comprehensive as it contains information about casual riders and members, their timestamp of 
-**CURRENT**:
-**CITED**:
+RELIABLE: The reliability of data is uncertain because the information of riders is removed due to privacy reasons.
+
+ORIGINAL: The data is original as it's owned and collected by Divvy.
+
+COMPREHENSIVE: The data is comprehensive as it contains information about casual riders and members, start and end timestamps of their trips, and start and end stations.
+
+CURRENT: The data is fairly current and up to date as the data is collected from February 2022 to January 2023.
+
+CITED: The data is cited as it’s owned and collected by Divvy.
 
 
 ### ****STEP 3: PROCESS****
