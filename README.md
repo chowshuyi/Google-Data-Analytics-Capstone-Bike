@@ -39,10 +39,15 @@ CITED: The data is cited as it’s owned and collected by Divvy.
 ### ****STEP 3: PROCESS****
 
 #### ****Tools****
-Excel and SQL are used for data cleaning and transformation, and Tableau is used for data visualization.
+Excel and SQL are used for data transformation and cleaning, and Tableau is used for data visualization.
 
-#### ****Data Cleaning and Transformation****
-First, I created a new column called *day_of_week* using the Excel formula "TEXT", for example:
+#### ****Data Transformation****
+I created a new column called *day_of_week* using the Excel formula "TEXT", for example:
 ```
 =TEXT(C2,"dddd")
 ```
+It will show the day of the date in column C as below:
+![Capture](https://user-images.githubusercontent.com/127185901/224466667-4fe4497f-96b7-4844-a1ba-37bd1a14b87f.PNG)
+I then save all files as Excel Workbook file type and rename the files as "divvy-tripdata-yyyymm" so the files do not start with numbers.
+
+#### ****Data Cleaning****
