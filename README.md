@@ -41,5 +41,8 @@ CITED: The data is cited as it’s owned and collected by Divvy.
 #### ****Tools****
 Excel and SQL are used for data cleaning and transformation, and Tableau is used for data visualization.
 
-
-
+#### ****Data Cleaning and Transformation****
+First, I created a new column called *day_of_week* using the Excel formula "TEXT", for example:
+```
+=TEXT(C2,"dddd")
+```
