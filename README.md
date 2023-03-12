@@ -48,6 +48,7 @@ A new column is created called *day_of_week* using the Excel formula "TEXT", for
 ```
 It will show the day of the date in column C as below:
 ![Capture](https://user-images.githubusercontent.com/127185901/224466667-4fe4497f-96b7-4844-a1ba-37bd1a14b87f.PNG)
+
 All files were saved as Excel Workbook file type and renamed as "divvy-tripdata-yyyymm" so the files do not start with numbers.
 
 All 12 files were imported to SQL Server and the below query was run to combine all 12 tables into one.
