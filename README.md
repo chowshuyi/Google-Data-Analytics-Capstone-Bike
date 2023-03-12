@@ -123,3 +123,8 @@ WHERE start_station_name IS NULL
 	OR end_lat IS NULL
 	OR end_lng IS NULL;
 ```
+
+### ****STEP 4: ANALYZE****
+
+This is the step of analyzing the data. The full SQL script of the process can be found in xxx.
+
