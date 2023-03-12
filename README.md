@@ -112,7 +112,7 @@ UNION
 SELECT *
 FROM [dbo].[divvy-tripdata-202301];
 ```
-Then, below query was run to remove any rows with NULL values.
+Then, the below query was run to remove any rows with NULL values. (Note: Before removing any rows with NULL values, we should always check if the NULL values are valid. If there is a reason for the attribute/column to have NULL values, we should keep it. However, for this project, they will be removed).
 ```
 DELETE FROM divvy_tripdata
 WHERE start_station_name IS NULL
