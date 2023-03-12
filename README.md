@@ -42,12 +42,74 @@ CITED: The data is cited as it’s owned and collected by Divvy.
 Excel and SQL are used for data transformation and cleaning, and Tableau is used for data visualization.
 
 #### ****Data Transformation and Cleaning****
-I created a new column called *day_of_week* using the Excel formula "TEXT", for example:
+A new column is created called *day_of_week* using the Excel formula "TEXT", for example:
 ```
 =TEXT(C2,"dddd")
 ```
 It will show the day of the date in column C as below:
 ![Capture](https://user-images.githubusercontent.com/127185901/224466667-4fe4497f-96b7-4844-a1ba-37bd1a14b87f.PNG)
-I then save all files as Excel Workbook file type and rename the files as "divvy-tripdata-yyyymm" so the files do not start with numbers.
+All files were saved as Excel Workbook file type and renamed as "divvy-tripdata-yyyymm" so the files do not start with numbers.
 
-I imported all 12 files to SQL Server and ran below query to 
+All 12 files were imported to SQL Server and below query were ran to combine all 12 tables into one.
+```
+SELECT *
+INTO divvy_tripdata
+FROM [dbo].[divvy-tripdata-202202]
+
+UNION
+
+SELECT *
+FROM [dbo].[divvy-tripdata-202203]
+
+UNION
+
+SELECT *
+FROM [dbo].[divvy-tripdata-202204]
+
+UNION
+
+SELECT *
+FROM [dbo].[divvy-tripdata-202205]
+
+UNION
+
+SELECT *
+FROM [dbo].[divvy-tripdata-202206]
+
+UNION
+
+SELECT *
+FROM [dbo].[divvy-tripdata-202207]
+
+UNION
+
+SELECT *
+FROM [dbo].[divvy-tripdata-202208]
+
+UNION
+
+SELECT *
+FROM [dbo].[divvy-tripdata-202209]
+
+UNION
+
+SELECT *
+FROM [dbo].[divvy-tripdata-202210]
+
+UNION
+
+SELECT *
+FROM [dbo].[divvy-tripdata-202211]
+
+UNION
+
+SELECT *
+FROM [dbo].[divvy-tripdata-202212]
+
+UNION
+
+SELECT *
+FROM [dbo].[divvy-tripdata-202301];
+```
+
+
