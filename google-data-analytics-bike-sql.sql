@@ -248,10 +248,10 @@ ORDER BY station_count DESC; -- Streeter Dr & Grand Ave is also the most popular
 
 -- 7. Create view for visualization
 
-CREATE VIEW simplified_divvy_tripdata AS
+CREATE VIEW new_divvy_tripdata AS
 SELECT member_casual, month, day_of_week, start_station_name, end_station_name, start_lat, start_lng, end_lat, end_lng, trip_duration
 FROM divvy_tripdata
 WHERE trip_duration <> 0;
 
 SELECT *
-FROM simplified_divvy_tripdata;
+FROM new_divvy_tripdata;
