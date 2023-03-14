@@ -127,5 +127,5 @@ WHERE start_station_name IS NULL
 
 ### ****STEP 4: ANALYZE****
 
-This is the step of analyzing the data. The full SQL script of the process can be found in xxx.
+This is the step of analyzing the data. The full SQL script of the process can be found in [google-data-analytics-bike-sql.sql]().
 
