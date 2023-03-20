@@ -128,3 +128,11 @@ WHERE start_station_name LIKE '%warehouse%'
 
 This is the step of analyzing the data. The full SQL script of the process can be found in [google-data-analytics-bike-sql.sql](https://github.com/chowshuyi/Google-Data-Analytics-Capstone-Bike/blob/main/google-data-analytics-bike-sql.sql).
 
+The column **trip_duration** were added to the table using below query:
+```
+ALTER TABLE divvy_tripdata
+ADD trip_duration INT;
+
+UPDATE divvy_tripdata
+SET trip_duration = DATEDIFF(minute, started_at, ended_at);
+```
