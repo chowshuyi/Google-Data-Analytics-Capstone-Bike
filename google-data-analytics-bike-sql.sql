@@ -169,7 +169,7 @@ SELECT member_casual, AVG(trip_duration) AS average_trip_duration, MIN(trip_dura
 FROM divvy_tripdata
 GROUP BY member_casual;
 
--- 6(c). Calculate count of rider type by weekday
+-- 6(c). Calculate count of rider by type and weekday
 
 SELECT day_of_week, COUNT(*) as member_count
 FROM divvy_tripdata
@@ -183,7 +183,7 @@ WHERE member_casual = 'casual'
 GROUP BY day_of_week
 ORDER BY casual_count DESC; -- Saturday has the highest count for casual riders.
 
--- 6(d). Calculate count of rider type by month
+-- 6(d). Calculate count of rider by type and month
 
 SELECT month, COUNT(*) as member_count
 FROM divvy_tripdata
@@ -197,7 +197,7 @@ WHERE member_casual = 'casual'
 GROUP BY month
 ORDER BY casual_count DESC; -- July has the highest count for casual riders.
 
--- 6(e). Calculate count of rider type by start/end station
+-- 6(e). Calculate count of rider by type and start/end station
 
 SELECT TOP 10 start_station_name, COUNT(*) AS station_count
 FROM divvy_tripdata
