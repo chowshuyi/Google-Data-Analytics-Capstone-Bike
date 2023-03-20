@@ -102,8 +102,17 @@ WHERE start_station_name IS NULL
 	OR end_lat IS NULL
 	OR end_lng IS NULL;
 ```
+Rows with duplicated **ride_id** were also removed, since **ride_id** should be unique/distinct as new **ride_id** is generated with each new ride.
+```
+DELETE FROM divvy_tripdata
+WHERE ride_id IN (
+	SELECT ride_id
+	FROM divvy_tripdata
+	GROUP BY ride_id
+	HAVING COUNT(*) > 1);
+  ```
 
-### ****STEP 4: ANALYZE****
+### **STEP 4: ANALYZE**
 
 This is the step of analyzing the data. The full SQL script of the process can be found in [google-data-analytics-bike-sql.sql](https://github.com/chowshuyi/Google-Data-Analytics-Capstone-Bike/blob/main/google-data-analytics-bike-sql.sql).
 
