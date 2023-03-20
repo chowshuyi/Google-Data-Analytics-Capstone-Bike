@@ -136,3 +136,29 @@ ADD trip_duration INT;
 UPDATE divvy_tripdata
 SET trip_duration = DATEDIFF(minute, started_at, ended_at);
 ```
+To calculate the percentage of member vs casual riders:
+```sql
+SELECT member_casual, COUNT(*) as count, COUNT(*) * 100 / SUM(COUNT(*)) OVER() as percentage
+FROM divvy_tripdata
+GROUP BY member_casual;
+```
+To calculate the average, min and max of the trip duration by rider type:
+```sql
+SELECT member_casual, AVG(trip_duration) AS average_trip_duration, MIN(trip_duration) AS min_trip_duration, MAX(trip_duration) AS max_trip_duration
+FROM divvy_tripdata
+GROUP BY member_casual;
+```
+To calculate the count of rider type by weekday:
+```sql
+SELECT day_of_week, COUNT(*) as member_count
+FROM divvy_tripdata
+WHERE member_casual = 'member'
+GROUP BY day_of_week
+ORDER BY member_count DESC;
+
+SELECT day_of_week, COUNT(*) as casual_count
+FROM divvy_tripdata
+WHERE member_casual = 'casual'
+GROUP BY day_of_week
+ORDER BY casual_count DESC;
+```
