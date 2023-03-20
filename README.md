@@ -19,12 +19,12 @@ Analyze the pattern and differences between casual riders and members, to provid
 3. How can Cyclistic use digital media to influence casual riders to become members?
 
 
-### ****STEP 2: PREPARE****
+### **STEP 2: PREPARE**
 
-#### ****Data Source and Specification****
+#### **Data Source and Specification**
 The latest 12 months of data are taken from [Divvy Bike website](https://divvy-tripdata.s3.amazonaws.com/index.html). They are stored in CSV files by month.
 
-#### ****Data Credibility****
+#### **Data Credibility**
 RELIABLE: The reliability of data is uncertain because the information of riders is removed due to privacy reasons.
 
 ORIGINAL: The data is original as it's owned and collected by Divvy.
@@ -36,12 +36,12 @@ CURRENT: The data is fairly current and up to date as the data is collected from
 CITED: The data is cited as it’s owned and collected by Divvy.
 
 
-### ****STEP 3: PROCESS****
+### **STEP 3: PROCESS**
 
-#### ****Tools****
+#### **Tools**
 Excel and SQL are used for data transformation and cleaning, and Tableau is used for data visualization.
 
-#### ****Data Transformation and Cleaning****
+#### **Data Transformation and Cleaning**
 A new column is created called *day_of_week* using the Excel formula "TEXT", for example:
 ```
 =TEXT(C2,"dddd")
@@ -102,7 +102,7 @@ WHERE start_station_name IS NULL
 	OR end_lat IS NULL
 	OR end_lng IS NULL;
 ```
-Rows with duplicated **ride_id** were also removed, since **ride_id** should be unique/distinct as new **ride_id** is generated with each new ride.
+Rows with duplicated **ride_id** were also removed, since ride_id should be unique/distinct as new ride_id is generated with each new ride.
 ```
 DELETE FROM divvy_tripdata
 WHERE ride_id IN (
@@ -110,7 +110,19 @@ WHERE ride_id IN (
 	FROM divvy_tripdata
 	GROUP BY ride_id
 	HAVING COUNT(*) > 1);
-  ```
+```
+Rows with started time later than ended time were also removed using below query:
+```
+DELETE FROM divvy_tripdata
+WHERE started_at > ended_at;
+```
+Rows with start station or end station name **Based - 2132 W Hubbard Warehouse** were removed.
+```
+DELETE FROM divvy_tripdata
+WHERE start_station_name LIKE '%warehouse%'
+	OR end_station_name LIKE '%warehouse%';
+```
+
 
 ### **STEP 4: ANALYZE**
 
