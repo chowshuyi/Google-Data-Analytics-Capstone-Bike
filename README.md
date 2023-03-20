@@ -52,7 +52,7 @@ It will show the day of the date in column C as below:
 All files were saved as Excel Workbook file type and renamed as "divvy-tripdata-yyyymm" so the files do not start with numbers.
 
 All 12 files were imported to SQL Server and the below query was run to combine all 12 tables into one.
-```
+```sql
 SELECT *
 INTO divvy_tripdata
 FROM [dbo].[divvy-tripdata-202202]
@@ -91,7 +91,7 @@ SELECT *
 FROM [dbo].[divvy-tripdata-202301];
 ```
 Then, the below query was run to remove any rows with NULL values. (Note: Before removing any rows with NULL values, we should always check if the NULL values are valid. If there is a reason for the attribute/column to have NULL values, we should keep it. However, for this project, they will be removed).
-```
+```sql
 DELETE FROM divvy_tripdata
 WHERE start_station_name IS NULL
 	OR start_station_id IS NULL
@@ -103,7 +103,7 @@ WHERE start_station_name IS NULL
 	OR end_lng IS NULL;
 ```
 Rows with duplicated **ride_id** were also removed, since ride_id should be unique/distinct as new ride_id is generated with each new ride.
-```
+```sql
 DELETE FROM divvy_tripdata
 WHERE ride_id IN (
 	SELECT ride_id
@@ -112,12 +112,12 @@ WHERE ride_id IN (
 	HAVING COUNT(*) > 1);
 ```
 Rows with started time later than ended time were also removed using below query:
-```
+```sql
 DELETE FROM divvy_tripdata
 WHERE started_at > ended_at;
 ```
 Rows with start station or end station name **Based - 2132 W Hubbard Warehouse** were removed.
-```
+```sql
 DELETE FROM divvy_tripdata
 WHERE start_station_name LIKE '%warehouse%'
 	OR end_station_name LIKE '%warehouse%';
@@ -129,7 +129,7 @@ WHERE start_station_name LIKE '%warehouse%'
 This is the step of analyzing the data. The full SQL script of the process can be found in [google-data-analytics-bike-sql.sql](https://github.com/chowshuyi/Google-Data-Analytics-Capstone-Bike/blob/main/google-data-analytics-bike-sql.sql).
 
 The column **trip_duration** were added to the table using below query:
-```
+```sql
 ALTER TABLE divvy_tripdata
 ADD trip_duration INT;
 
