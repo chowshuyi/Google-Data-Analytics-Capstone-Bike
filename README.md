@@ -148,7 +148,7 @@ SELECT member_casual, AVG(trip_duration) AS average_trip_duration, MIN(trip_dura
 FROM divvy_tripdata
 GROUP BY member_casual;
 ```
-To calculate the count of rider type by weekday:
+To calculate the count of rider by type and weekday:
 ```sql
 SELECT day_of_week, COUNT(*) as member_count
 FROM divvy_tripdata
@@ -161,4 +161,44 @@ FROM divvy_tripdata
 WHERE member_casual = 'casual'
 GROUP BY day_of_week
 ORDER BY casual_count DESC;
+```
+To calculate the count of rider by type and month:
+```sql
+SELECT month, COUNT(*) as member_count
+FROM divvy_tripdata
+WHERE member_casual = 'member'
+GROUP BY month
+ORDER BY member_count DESC;
+
+SELECT month, COUNT(*) as casual_count
+FROM divvy_tripdata
+WHERE member_casual = 'casual'
+GROUP BY month
+ORDER BY casual_count DESC;
+```
+To calculate the count of rider by type and start/end station:
+```sql
+SELECT TOP 10 start_station_name, COUNT(*) AS station_count
+FROM divvy_tripdata
+WHERE member_casual = 'member'
+GROUP BY start_station_name
+ORDER BY station_count DESC;
+
+SELECT TOP 10 end_station_name, COUNT(*) AS station_count
+FROM divvy_tripdata
+WHERE member_casual = 'member'
+GROUP BY end_station_name
+ORDER BY station_count DESC;
+
+SELECT TOP 10 start_station_name, COUNT(*) AS station_count
+FROM divvy_tripdata
+WHERE member_casual = 'casual'
+GROUP BY start_station_name
+ORDER BY station_count DESC;
+
+SELECT TOP 10 end_station_name, COUNT(*) AS station_count
+FROM divvy_tripdata
+WHERE member_casual = 'casual'
+GROUP BY end_station_name
+ORDER BY station_count DESC;
 ```
