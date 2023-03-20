@@ -5,15 +5,15 @@ This case study is part of the Google Data Analytics course.
 I will be using the 6-steps of data analysis process for this project: **Ask**, **Prepare**, **Process**, **Analyze**, **Share** and **Act**.
 
 
-### ****STEP 1: ASK****
+### **STEP 1: ASK**
 
-#### ****Background****
+#### **Background**
 Cyclistic is a bike-sharing company in Chicago. In 2016, they launched a successful bike-share offering program and have since then grown to a fleet of 5,824 bicycles that are geotracked and locked into a network of 692 stations across Chicago. The bikes can be unlocked from one station and returned to any other station in the system at any time. There are 2 types of customers: *casual riders* and *members*. Customers who purchase single-ride or full-day passes are referred to as casual riders; customers who purchase annual memberships are Cyclistic members.
 
-#### ****Business Task****
+#### **Business Task**
 Analyze the pattern and differences between casual riders and members, to provide insights on converting casual riders into members.
 
-#### ****Business Questions****
+#### **Business Questions**
 1. How do annual members and casual riders use Cyclistic bikes differently?
 2. Why would casual riders buy Cyclistic annual memberships?
 3. How can Cyclistic use digital media to influence casual riders to become members?
