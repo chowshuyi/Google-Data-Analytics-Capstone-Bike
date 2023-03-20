@@ -98,19 +98,19 @@ HAVING COUNT(ride_id) > 1; -- From this query we can see that some ride_id are d
 SELECT *
 FROM divvy_tripdata
 WHERE ride_id IN (
-  SELECT ride_id
-  FROM divvy_tripdata
-  GROUP BY ride_id
-  HAVING COUNT(*) > 1); -- This query shows the details of duplicated ride_id.
+	SELECT ride_id
+	FROM divvy_tripdata
+	GROUP BY ride_id
+	HAVING COUNT(*) > 1); -- This query shows the details of duplicated ride_id.
 
 -- 4(a). Remove rows with duplicated ride_id (ride_id should be unique/distinct as new ride_id is generated with each new ride)
 
 DELETE FROM divvy_tripdata
 WHERE ride_id IN (
-  SELECT ride_id
-  FROM divvy_tripdata
-  GROUP BY ride_id
-  HAVING COUNT(*) > 1);
+	SELECT ride_id
+	FROM divvy_tripdata
+	GROUP BY ride_id
+	HAVING COUNT(*) > 1);
 
 SELECT COUNT(*)
 FROM divvy_tripdata; -- New total number of rows is 4437498 after removing duplicated ride_id.
@@ -169,7 +169,7 @@ SELECT member_casual, AVG(trip_duration) AS average_trip_duration, MIN(trip_dura
 FROM divvy_tripdata
 GROUP BY member_casual;
 
--- 6(c). Calculate rider count by type and weekday
+-- 6(c). Calculate count of rider type by weekday
 
 SELECT day_of_week, COUNT(*) as member_count
 FROM divvy_tripdata
@@ -183,7 +183,7 @@ WHERE member_casual = 'casual'
 GROUP BY day_of_week
 ORDER BY casual_count DESC; -- Saturday has the highest count for casual riders.
 
--- 6(d). Calculate rider count by type and month
+-- 6(d). Calculate count of rider type by month
 
 SELECT month, COUNT(*) as member_count
 FROM divvy_tripdata
@@ -197,7 +197,7 @@ WHERE member_casual = 'casual'
 GROUP BY month
 ORDER BY casual_count DESC; -- July has the highest count for casual riders.
 
--- 6(e). Calculate rider count by type and start/end station
+-- 6(e). Calculate count of rider type by start/end station
 
 SELECT TOP 10 start_station_name, COUNT(*) AS station_count
 FROM divvy_tripdata
