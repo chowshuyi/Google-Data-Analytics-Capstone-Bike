@@ -3,59 +3,37 @@
 SELECT *
 INTO divvy_tripdata
 FROM [dbo].[divvy-tripdata-202202]
-
 UNION
-
 SELECT *
 FROM [dbo].[divvy-tripdata-202203]
-
 UNION
-
 SELECT *
 FROM [dbo].[divvy-tripdata-202204]
-
 UNION
-
 SELECT *
 FROM [dbo].[divvy-tripdata-202205]
-
 UNION
-
 SELECT *
 FROM [dbo].[divvy-tripdata-202206]
-
 UNION
-
 SELECT *
 FROM [dbo].[divvy-tripdata-202207]
-
 UNION
-
 SELECT *
 FROM [dbo].[divvy-tripdata-202208]
-
 UNION
-
 SELECT *
 FROM [dbo].[divvy-tripdata-202209]
-
 UNION
-
 SELECT *
 FROM [dbo].[divvy-tripdata-202210]
-
 UNION
-
 SELECT *
 FROM [dbo].[divvy-tripdata-202211]
-
 UNION
-
 SELECT *
 FROM [dbo].[divvy-tripdata-202212]
-
 UNION
-
 SELECT *
 FROM [dbo].[divvy-tripdata-202301];
 
