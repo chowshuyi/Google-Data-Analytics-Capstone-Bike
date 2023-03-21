@@ -212,4 +212,11 @@ The full data visualization is available [here](https://public.tableau.com/app/p
 
 From the above pie chart, we can see that 59.93% of the users are members and 40.07% of the users are casual riders. Although there are more members than casual riders, casual riders are still very close to 50%.
 
+![Average of Trip Duration](https://user-images.githubusercontent.com/127185901/226622122-507d1436-c27d-4659-95df-5099b934886f.png)
+
+On average, casual riders spend longer time than members on their bike trip.
+
+![Rider Type by Weekday](https://user-images.githubusercontent.com/127185901/226623119-02817140-32e8-4dc4-8367-27017473ceaf.png)
+
+The above bar chart shows that casual riders have higher trips during weekends while members have higher trips during weekdays.
 
