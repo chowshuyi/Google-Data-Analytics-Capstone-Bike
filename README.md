@@ -209,5 +209,4 @@ ORDER BY station_count DESC;
 The full data visualization is available [here](https://public.tableau.com/app/profile/chow.shu.yi/viz/GoogleDABike/Dashboard1?publish=yes) in Tableau.
 
 ![Member vs Casual Riders](https://user-images.githubusercontent.com/127185901/226613189-4e776cee-0618-4da8-b603-91ae89c66dab.png)
-
 From the above pie chart, we can see that 59.93% of the users are members and 40.07% of the users are casual riders. Although there are more members than casual riders, casual riders are still very close to 50%.
