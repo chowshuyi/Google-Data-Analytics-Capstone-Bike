@@ -202,3 +202,11 @@ WHERE member_casual = 'casual'
 GROUP BY end_station_name
 ORDER BY station_count DESC;
 ```
+
+
+### **STEP 5: SHARE**
+
+The full data visualization is available [here](https://public.tableau.com/app/profile/chow.shu.yi/viz/GoogleDABike/Dashboard1?publish=yes) in Tableau.
+
+xxx pie chart xxx
+From the above pie chart, we can see that 59.93% of the users are members and 40.07% of the users are casual riders. Although there are more members than casual riders, casual riders are still very close to 50%.
