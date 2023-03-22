@@ -218,5 +218,5 @@ On average, casual riders spend longer time than members on their bike trip.
 
 ![Rider Type by Weekday](https://user-images.githubusercontent.com/127185901/226623119-02817140-32e8-4dc4-8367-27017473ceaf.png)
 
-The above bar chart shows that casual riders have higher trips during weekends while members have higher trips during weekdays.
+The above bar chart shows that casual riders have higher number of trips during weekends while members have higher number of trips during weekdays.
 
