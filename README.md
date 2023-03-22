@@ -228,3 +228,11 @@ The above line graph shows that both casual riders and members have similar tren
 ![Top 15 Drop Off Stations](https://user-images.githubusercontent.com/127185901/226856506-03d7de91-807e-4187-b75c-1770c5853256.png)
 
 The most popular pick up and drop off station for casual riders is *Streeter Dr & Grand Ave* while the most popular pick up and drop off station for members is *Kingsbury St Kinzie St*.
+
+### **STEP 6: ACT**
+
+In this step, we will bring back the 3 business questions.
+
+1. How do annual members and casual riders use Cyclistic bikes differently?
+
+
