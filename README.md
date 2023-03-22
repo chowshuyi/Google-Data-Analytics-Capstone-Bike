@@ -223,3 +223,8 @@ The above bar chart shows that casual riders have higher number of trips during 
 ![Rider Type by Month](https://user-images.githubusercontent.com/127185901/226850607-e9e03128-637d-432f-babf-9a0cbfc3fbb5.png)
 
 The above line graph shows that both casual riders and members have similar trend, with Summer months (June-August) having higher number of trips than other months.
+
+![Top 15 Pick Up Stations](https://user-images.githubusercontent.com/127185901/226857212-11f71f8a-66b2-4745-86bc-e776e7d10515.png)
+![Top 15 Drop Off Stations](https://user-images.githubusercontent.com/127185901/226856506-03d7de91-807e-4187-b75c-1770c5853256.png)
+
+The most popular pick up and drop off station for casual riders is *Streeter Dr & Grand Ave* while the most popular pick up and drop off station for members is *Kingsbury St Kinzie St*.
