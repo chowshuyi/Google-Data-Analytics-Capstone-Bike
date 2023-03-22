@@ -224,10 +224,10 @@ GROUP BY end_station_name
 ORDER BY station_count DESC; -- Streeter Dr & Grand Ave is also the most popular drop off station for casual riders.
 
 
--- 7. Create view for visualization
+-- 7. Create new table for visualization
 
-CREATE VIEW new_divvy_tripdata AS
-SELECT member_casual, month, day_of_week, start_station_name, end_station_name, start_lat, start_lng, end_lat, end_lng, trip_duration
+SELECT ride_id, started_at, member_casual, month, day_of_week, start_station_name, end_station_name, start_lat, start_lng, end_lat, end_lng, trip_duration
+INTO new_divvy_tripdata
 FROM divvy_tripdata
 WHERE trip_duration <> 0;
 
