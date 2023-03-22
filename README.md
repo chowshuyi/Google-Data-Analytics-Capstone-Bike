@@ -222,4 +222,4 @@ The above bar chart shows that casual riders have higher number of trips during 
 
 ![Rider Type by Month](https://user-images.githubusercontent.com/127185901/226850607-e9e03128-637d-432f-babf-9a0cbfc3fbb5.png)
 
-The above line graph shows that both casual riders and members have similar trend, with Summer months (June-August) having higher number of trips then other months.
+The above line graph shows that both casual riders and members have similar trend, with Summer months (June-August) having higher number of trips than other months.
