@@ -230,7 +230,7 @@ Casual riders have higher number of rides during weekends while members have hig
 
 ![Count of Rides by Time](https://user-images.githubusercontent.com/127185901/227222375-f01372ae-1228-4da3-bf77-76132d4c9924.png)
 
-
+For members, the count of rides peaked at 8 AM and 7 PM throughout the day. Whereas, for casual riders, the count of rides gradually increased and peaked at 5 PM.
 
 ![Top 15 Pick Up Stations](https://user-images.githubusercontent.com/127185901/226901340-09563cd0-aa1d-46eb-87cc-7a932dc4e8fd.png)
 ![Top 15 Drop Off Stations](https://user-images.githubusercontent.com/127185901/226901362-940b8d94-27e6-40d7-8fa1-6f4a5f960900.png)
@@ -243,7 +243,7 @@ In this step, we will bring back the 3 business questions.
 
 1. How do annual members and casual riders use Cyclistic bikes differently?
 
-* On average, casual riders spend longer time than annual members on their bike trip. Also, casual riders have higher number of rides during weekends while annual members have higher number of rides during weekdays. This could suggest that most casual riders ride to explore around the city during weekends, or to hangout with friends of family, hence the duration of trip is longer. Whereas most annual members ride to commute to work during weekdays.
+* On average, casual riders spend longer time than annual members on their bike trip. Also, casual riders have higher number of rides during weekends while annual members have higher number of rides during weekdays. This could suggest that most casual riders ride as a leisure activity during weekends, or to hangout with friends of family, hence the duration of trip is longer. Whereas most annual members ride to commute to work during weekdays. This is also supported by "Count of Rides by Time" graph where the count of rides spike up at 8 AM（start work) and 5 PM (get off work) for members, and count of rides gradually increase for casual riders.
 
 2. Why would casual riders buy Cyclistic annual memberships?
 * 
