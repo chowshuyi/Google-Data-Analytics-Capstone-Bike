@@ -210,7 +210,7 @@ The full data visualization is available [here](https://public.tableau.com/app/p
 
 ![Member vs Casual Riders](https://user-images.githubusercontent.com/127185901/226901178-868f0124-2027-4af5-b619-c04b05c3bdc6.png)
 
-From the above pie chart, we can see that 59.93% of the users are members and 40.07% of the users are casual riders. Although there are more members than casual riders, casual riders are still very close to 50%.
+59.93% of the users are members and 40.07% of the users are casual riders. Although there are more members than casual riders, casual riders are still very close to 50%.
 
 ![Types of Bike](https://user-images.githubusercontent.com/127185901/227221274-094db512-7f8b-4e50-b639-19b719a9f766.png)
 
@@ -220,13 +220,17 @@ Classic bike is the most preferred type of bike for both casual riders and membe
 
 On average, casual riders spend longer time than members on their ride.
 
-![Rider Type by Weekday](https://user-images.githubusercontent.com/127185901/226901265-69641f6b-40ec-4938-b29f-72501a157e86.png)
-
-The above bar chart shows that casual riders have higher number of rides during weekends while members have higher number of rides during weekdays.
-
 ![Rider Type by Month](https://user-images.githubusercontent.com/127185901/226901302-afdc4f00-2f93-4c86-b325-2d845300bf61.png)
 
-The above line graph shows that both casual riders and members have similar trend, with Summer months (June-August) having higher number of rides than other months.
+Both casual riders and members have similar trend, with Summer months (June-August) having higher number of rides than other months.
+
+![Rider Type by Weekday](https://user-images.githubusercontent.com/127185901/226901265-69641f6b-40ec-4938-b29f-72501a157e86.png)
+
+Casual riders have higher number of rides during weekends while members have higher number of rides during weekdays.
+
+![Count of Rides by Time](https://user-images.githubusercontent.com/127185901/227222375-f01372ae-1228-4da3-bf77-76132d4c9924.png)
+
+
 
 ![Top 15 Pick Up Stations](https://user-images.githubusercontent.com/127185901/226901340-09563cd0-aa1d-46eb-87cc-7a932dc4e8fd.png)
 ![Top 15 Drop Off Stations](https://user-images.githubusercontent.com/127185901/226901362-940b8d94-27e6-40d7-8fa1-6f4a5f960900.png)
