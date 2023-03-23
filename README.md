@@ -214,15 +214,15 @@ From the above pie chart, we can see that 59.93% of the users are members and 40
 
 ![Average of Trip Duration](https://user-images.githubusercontent.com/127185901/227136827-a54dbcd3-b642-49de-9427-bf4524cac86f.png)
 
-On average, casual riders spend longer time than members on their bike trip.
+On average, casual riders spend longer time than members on their ride.
 
 ![Rider Type by Weekday](https://user-images.githubusercontent.com/127185901/226901265-69641f6b-40ec-4938-b29f-72501a157e86.png)
 
-The above bar chart shows that casual riders have higher number of trips during weekends while members have higher number of trips during weekdays.
+The above bar chart shows that casual riders have higher number of rides during weekends while members have higher number of rides during weekdays.
 
 ![Rider Type by Month](https://user-images.githubusercontent.com/127185901/226901302-afdc4f00-2f93-4c86-b325-2d845300bf61.png)
 
-The above line graph shows that both casual riders and members have similar trend, with Summer months (June-August) having higher number of trips than other months.
+The above line graph shows that both casual riders and members have similar trend, with Summer months (June-August) having higher number of rides than other months.
 
 ![Top 15 Pick Up Stations](https://user-images.githubusercontent.com/127185901/226901340-09563cd0-aa1d-46eb-87cc-7a932dc4e8fd.png)
 ![Top 15 Drop Off Stations](https://user-images.githubusercontent.com/127185901/226901362-940b8d94-27e6-40d7-8fa1-6f4a5f960900.png)
@@ -235,4 +235,4 @@ In this step, we will bring back the 3 business questions.
 
 1. How do annual members and casual riders use Cyclistic bikes differently?
 
-	- 
+	* On average, casual riders spend longer time than annual members on their bike trip. Also, casual riders have higher number of rides during weekends while annual members have higher number of rides during weekdays. This could suggest that most casual riders ride to explore around the city during weekends, or to hangout with friends of family, hence the duration of trip is longer. Whereas most annual members ride to commute to work during weekdays.
