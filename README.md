@@ -235,4 +235,4 @@ In this step, we will bring back the 3 business questions.
 
 1. How do annual members and casual riders use Cyclistic bikes differently?
 
-	* On average, casual riders spend longer time than annual members on their bike trip. Also, casual riders have higher number of rides during weekends while annual members have higher number of rides during weekdays. This could suggest that most casual riders ride to explore around the city during weekends, or to hangout with friends of family, hence the duration of trip is longer. Whereas most annual members ride to commute to work during weekdays.
+* On average, casual riders spend longer time than annual members on their bike trip. Also, casual riders have higher number of rides during weekends while annual members have higher number of rides during weekdays. This could suggest that most casual riders ride to explore around the city during weekends, or to hangout with friends of family, hence the duration of trip is longer. Whereas most annual members ride to commute to work during weekdays.
