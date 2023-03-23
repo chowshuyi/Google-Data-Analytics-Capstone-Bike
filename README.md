@@ -212,6 +212,10 @@ The full data visualization is available [here](https://public.tableau.com/app/p
 
 From the above pie chart, we can see that 59.93% of the users are members and 40.07% of the users are casual riders. Although there are more members than casual riders, casual riders are still very close to 50%.
 
+![Types of Bike](https://user-images.githubusercontent.com/127185901/227221274-094db512-7f8b-4e50-b639-19b719a9f766.png)
+
+Classic bike is the most preferred type of bike for both casual riders and members.
+
 ![Average of Trip Duration](https://user-images.githubusercontent.com/127185901/227136827-a54dbcd3-b642-49de-9427-bf4524cac86f.png)
 
 On average, casual riders spend longer time than members on their ride.
