@@ -212,13 +212,9 @@ The full data visualization is available [here](https://public.tableau.com/app/p
 
 59.93% of the users are members and 40.07% of the users are casual riders. Although there are more members than casual riders, casual riders are still very close to 50%.
 
-![Types of Bike](https://user-images.githubusercontent.com/127185901/227221274-094db512-7f8b-4e50-b639-19b719a9f766.png)
+![Trip Duration by Weekday](https://user-images.githubusercontent.com/127185901/227482373-e9e9e70e-f886-436e-894e-1aa48712b502.png)
 
-Classic bike is the most preferred type of bike for both casual riders and members.
-
-![Average of Trip Duration](https://user-images.githubusercontent.com/127185901/227136827-a54dbcd3-b642-49de-9427-bf4524cac86f.png)
-
-On average, casual riders spend longer time than members on their ride.
+In total, casual riders have longer trip duration than members during weekends, while there is not much difference of trip duration between casual riders and members during weekdays. However, when looking at average level, casual members have significantly longer trip duration than members.
 
 ![Rider Type by Month](https://user-images.githubusercontent.com/127185901/226901302-afdc4f00-2f93-4c86-b325-2d845300bf61.png)
 
