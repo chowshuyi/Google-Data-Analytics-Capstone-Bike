@@ -22,7 +22,7 @@ Analyze the pattern and differences between casual riders and members, to provid
 ### **STEP 2: PREPARE**
 
 #### **Data Source and Specification**
-The latest 12 months of data are taken from [Divvy Bike website](https://divvy-tripdata.s3.amazonaws.com/index.html). They are stored in CSV files by month.
+The latest 12 months of data are taken from the [Divvy Bike website](https://divvy-tripdata.s3.amazonaws.com/index.html). They are stored in CSV files by month.
 
 #### **Data Credibility**
 RELIABLE: The reliability of data is uncertain because the information of riders is removed due to privacy reasons.
@@ -31,7 +31,7 @@ ORIGINAL: The data is original as it's owned and collected by Divvy.
 
 COMPREHENSIVE: The data is comprehensive as it contains information about casual riders and members, start and end timestamps of their trips, and start and end stations.
 
-CURRENT: The data is fairly current and up to date as the data is collected from February 2022 to January 2023.
+CURRENT: The data is current and up to date as the data is collected from February 2022 to January 2023.
 
 CITED: The data is cited as it’s owned and collected by Divvy.
 
@@ -102,7 +102,7 @@ WHERE start_station_name IS NULL
 	OR end_lat IS NULL
 	OR end_lng IS NULL;
 ```
-Rows with duplicated **ride_id** were also removed, since ride_id should be unique/distinct as new ride_id is generated with each new ride.
+Rows with duplicated **ride_id** were also removed, since ride_id should be unique/distinct as a new ride_id is generated with each new ride.
 ```sql
 DELETE FROM divvy_tripdata
 WHERE ride_id IN (
@@ -210,19 +210,19 @@ The full data visualization is available [here](https://public.tableau.com/app/p
 
 ![Member vs Casual Riders](https://user-images.githubusercontent.com/127185901/226901178-868f0124-2027-4af5-b619-c04b05c3bdc6.png)
 
-59.93% of the users are members and 40.07% of the users are casual riders. Although there are more members than casual riders, casual riders are still very close to 50%.
+59.93% of the users are members and 40.07% are casual riders. Although there are more members than casual riders, casual riders are still close to 50%.
 
 ![Trip Duration by Weekday](https://user-images.githubusercontent.com/127185901/227482373-e9e9e70e-f886-436e-894e-1aa48712b502.png)
 
-In total, casual riders have longer trip duration than members during weekends, while there is not much difference of trip duration between casual riders and members during weekdays. However, when looking at average level, casual members have significantly longer trip duration than members.
+Looking at the total level, casual riders have longer trip duration than members during weekends, while there is not much difference in trip duration between casual riders and members during weekdays. However, when looking at the average level, casual riders have significantly longer trip duration than members.
 
 ![Rider Type by Month](https://user-images.githubusercontent.com/127185901/226901302-afdc4f00-2f93-4c86-b325-2d845300bf61.png)
 
-Both casual riders and members have similar trend, with Summer months (June-August) having higher number of rides than other months.
+Both casual riders and members have a similar trend, with the Summer months (June-August) having a higher number of rides than other months.
 
 ![Rider Type by Weekday](https://user-images.githubusercontent.com/127185901/226901265-69641f6b-40ec-4938-b29f-72501a157e86.png)
 
-Casual riders have higher number of rides during weekends while members have higher number of rides during weekdays.
+Casual riders have a higher number of rides during weekends while members have a higher number of rides during weekdays.
 
 ![Count of Rides by Time](https://user-images.githubusercontent.com/127185901/227222375-f01372ae-1228-4da3-bf77-76132d4c9924.png)
 
@@ -239,7 +239,7 @@ In this step, we will bring back the 3 business questions.
 
 1. How do annual members and casual riders use Cyclistic bikes differently?
 
-On average, casual riders spend longer time than annual members on their bike trip. Also, casual riders have higher number of rides during weekends while annual members have higher number of rides during weekdays. This could suggest that most casual riders ride as a leisure activity during weekends, or to hangout with friends of family, hence the trip duration is longer. Whereas most annual members ride to commute to work during weekdays, hence the trip duration is shorter. This is also supported by "Count of Rides by Time" graph where the count of rides spike up at 8 AM (start work) and 5 PM (get off work) for members, while count of rides gradually increase for casual riders.
+On average, casual riders spend longer time than annual members on their bike trips. Also, casual riders have a higher number of rides during weekends while annual members have a higher number of rides during weekdays. This could suggest that most casual riders ride as a leisure activity during weekends, or to hang out with friends or family, hence the trip duration is longer. Whereas most annual members ride to commute to work during weekdays, hence the trip duration is shorter. This is also supported by "Count of Rides by Time" graph where the count of rides spiked up at 8 AM (start work) and 5 PM (get off work) for members, while the count of rides gradually increased for casual riders.
 
 2. Why would casual riders buy Cyclistic annual memberships?
 
