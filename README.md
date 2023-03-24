@@ -247,4 +247,7 @@ Upon inspecting the Divvy [website](https://divvybikes.com/pricing) about the de
 
 3. How can Cyclistic use digital media to influence casual riders to become members?
 
-We would need more demographic information on the riders and their preferred digital platform. For example, 
+We would need more demographic information on the riders and their preferred digital platform. According to [Khoros](https://khoros.com/resources/social-media-demographics-guide#which-social-media-networks-should-your-business-prioritize), TikTok users spend 95 minutes per day on the platform and open it 8 times a day. 18-24 years old occupied the highest percentage which is 39.91%. In this case, Cyclistic could target users aged 18 to 24 on TikTok to promote their business.
+
+#### **Recommendations**
+
