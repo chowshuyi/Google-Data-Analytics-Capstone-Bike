@@ -253,4 +253,4 @@ We would need more demographic information on the riders and their preferred dig
 
 * Provide weekend-only annual membership with unlimited 3-hour rides for riders that prefer going out during weekends.
 * Provide annual membership with 3 hours or more per ride for riders that prefer longer trips for any day.
-* Conduct a survey to collect feedback from annual members on the reasons for becoming members and from casual riders on the reasons for not becoming members for further analysis.
+* Conduct a survey to collect feedback from annual members on the reasons for becoming members and from casual riders on the reasons for not becoming members along with their demographic information for further analysis.
