@@ -214,7 +214,7 @@ The full data visualization is available [here](https://public.tableau.com/app/p
 
 ![Trip Duration by Weekday](https://user-images.githubusercontent.com/127185901/227482373-e9e9e70e-f886-436e-894e-1aa48712b502.png)
 
-Looking at the total level, casual riders have longer trip duration than members during weekends, while there is not much difference in trip duration between casual riders and members during weekdays. However, when looking at the average level, casual riders have significantly longer trip duration than members.
+Looking at the total level, casual riders have longer trip duration than members during weekends, while there is not much difference in trip duration between casual riders and members during weekdays. However, when looking at the average level, casual riders have significantly longer trip duration than members throughout the week.
 
 ![Rider Type by Month](https://user-images.githubusercontent.com/127185901/226901302-afdc4f00-2f93-4c86-b325-2d845300bf61.png)
 
