@@ -243,7 +243,7 @@ On average, casual riders spend longer time than annual members on their bike tr
 
 2. Why would casual riders buy Cyclistic annual memberships?
 
-Upon inspecting the Divvy [website](https://divvybikes.com/pricing) about the details of different passes and memberships, we can see that the [Day Pass](https://divvybikes.com/pricing/day-pass) costs $16.50 per day with unlimited 3-hour rides for 24 hours. However, for [Annual Membership](https://divvybikes.com/pricing/annual), it costs $130.90 per year with only 45 minutes per ride. We can conclude that casual riders are long-trip riders and members are short-trip riders.
+Upon inspecting the Divvy [website](https://divvybikes.com/pricing) about the details of different passes and memberships, we can see that the [Day Pass](https://divvybikes.com/pricing/day-pass) costs $16.50 per day with unlimited 3-hour rides for 24 hours. However, for [Annual Membership](https://divvybikes.com/pricing/annual), it costs $130.90 per year with only 45 minutes per ride. We can conclude that casual riders are long-trip riders and members are short-trip riders. It's most likely that casual riders would buy Cyclistic annual memberships when they no longer cycle as a leisure activity, but as a means to commute to work instead.
 
 3. How can Cyclistic use digital media to influence casual riders to become members?
 
@@ -252,5 +252,5 @@ We would need more demographic information on the riders and their preferred dig
 #### **Recommendations**
 
 * Provide weekend-only annual membership with unlimited 3-hour rides for riders that prefer going out during weekends.
-* Provide annual membership with 3 hours or more per ride for riders that prefer longer trips.
+* Provide annual membership with 3 hours or more per ride for riders that prefer longer trips for any day.
 * Conduct a survey to collect feedback from annual members on the reasons for becoming members and from casual riders on the reasons for staying as casual riders.
